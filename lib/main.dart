@@ -1,4 +1,10 @@
 import 'package:ar_project/ar_view_page.dart';
+import 'package:ar_project/asset_obj_model/asset_model_view.dart';
+import 'package:ar_project/asset_obj_model/face_model_view.dart';
+import 'package:ar_project/asset_obj_model/remote_object.dart';
+import 'package:ar_project/asset_obj_model/runtime_materials.dart';
+import 'package:ar_project/asset_obj_model/texture_and_rotation.dart';
+import 'package:ar_project/ml_view_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -25,14 +31,14 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: ARPageView(),
+      home: AugmentedFacesScreen(),
       // home: PoseDetectorView(),
 
     );
   }
 }
 
-class MyHomePage extends StatefulWidget {
+/*class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key, required this.title});
 
   // This widget is the home page of your application. It is stateful, meaning
@@ -115,4 +121,4 @@ class _MyHomePageState extends State<MyHomePage> {
       ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
-}
+}*/
